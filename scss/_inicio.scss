@@ -1,0 +1,146 @@
+
+/*showcase*/
+.showcase {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        margin: 20px;
+    }
+
+    .grid {
+        overflow: visible;
+        grid-template-columns: 55% 44%;
+        gap: 2rem;
+    }
+}
+
+.showcase::before, .showcase::after{
+    content: "";
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+
+.showcase-text{
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.showcase-form{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+    animation: slideInFromRight 1s ease-in;
+
+    .form-control {
+        margin: 30px 0;
+    }
+
+    input[type="text"], input[type="email"] {
+        border: 0;
+        border-bottom: 1px solid #b4becb;
+        width: 100%;
+        padding: 3px;
+        font-size: 16px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+}
+
+/*info*/
+.info{
+    padding-top: 100px;
+    animation: slideInFromBottom 1s ease-in;
+    
+    .grid {
+
+        h3 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    .container {
+
+        h3 {
+            text-align: center;
+            justify-self: center;
+        }
+
+        .my-4 {
+            margin: 4rem - 1rem;  /*operación aritmética con margin del bucle*/
+        }
+    }
+}
+
+.infoHeading{
+    max-width: 500px;
+    margin: auto;
+}
+
+/*Cli*/
+
+.cli {
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .grid > *:first-child {
+        grid-column: 1 / span 2; 
+        grid-row: 1 / span 2;
+    }
+}
+
+/*contact*/
+.contact {
+    .grid {
+        grid-template-columns: 4fr 3fr;
+    }
+}
+
+
+/*Social Networks*/
+
+.social-networks {
+    .card {
+        text-align: center;
+        margin: 30px 10px 40px;
+        transition: transform 0.2s ease-in;
+        animation: slideInFromBottom 1s ease-in;
+    }
+    .card:hover {
+        transform: translateY(-15px);
+    }
+}
+/*each y map */
+$networks: #750433,#750433,#01403A,#002240,#002240;
+@each $network in $networks {
+    .bg-#{$network} {
+    background-color: $network;
+}
+}

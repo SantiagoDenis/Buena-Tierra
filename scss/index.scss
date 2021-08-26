@@ -1,0 +1,21 @@
+/*Globals*/
+
+@import './globals/normalice';
+@import './globals/variables';
+@import './globals/utilities';
+@import './globals/animations';
+@import './globals/mediaQueries';
+/*Partials*/
+
+@import './partials/header';
+@import './partials/footer';
+
+/*For each file*/
+
+@import './inicio';
+@import './about';
+@import './products';
+@import './register';
+@import './404';
+
+

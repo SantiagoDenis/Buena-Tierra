@@ -1,0 +1,87 @@
+@import './globals/mediaQueries';
+
+/*Sobre Nosotros*/
+.about-head {
+    img {
+        width: 300px;
+        justify-self: flex-end;
+    }
+}
+
+.about-head-text {
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.img-container {
+    animation: slideInFromRight 1s ease-in;
+    justify-self: center;
+}
+
+.about-sub-head {
+    justify-self: flex-end;
+    background-color: #014419;
+    color: #BFB26F;
+    
+    p {
+        font-size: medium;
+    }
+}
+
+.about-main .card > i{
+    margin-right: 20px;
+}
+
+
+
+/*Tablets and under*/
+@media(max-width: 768px) {
+    .grid, .showcase .grid, .info .grid, .cli .grid, .contact .grid, .about-main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase{
+        height: auto;
+    }
+
+    .showcase-form, .img-container{
+        justify-self: center;
+        margin: auto;
+        animation: slideInFromBottom 1s ease-in;
+    }
+
+    .showcase-text, .about-head-text{
+        text-align: center;
+        margin-top: 40px;
+        animation: slideInFromTop 1s ease-in;
+    }
+
+    .cli .grid > *:first-child{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .about-sub-head, .about-head{
+        text-align: center;
+    }
+
+    .about-sub-head, .about-head img{
+        justify-self: center;
+    }
+}
+
+/*mobile*/
+@media(max-width: 480px) {
+    .nav{
+        height: 110px;
+    }
+
+    .nav .flex{
+        flex-direction: column;
+    }
+
+    .nav ul{
+        padding: 10px;
+        background-color: rgba(0,0,0,0.1);
+    }
+}

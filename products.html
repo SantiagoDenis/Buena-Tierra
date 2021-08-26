@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Buena Tierra | Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</head>
+<body id="body-products">
+        <!--Nav-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-success">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <h1>Buena Tierra</h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Sobre Nosotros</a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos<span class="badge rounded-pill bg-danger">+</span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="suplementos.html">suplementos</a></li>
+                                    <li><a class="dropdown-item" href="tinturas.html">Tinturas</a></li>
+                                    <li><a class="dropdown-item" href="cremas.html">Cremas</a></li>
+                                    <li><a class="dropdown-item" href="geles.html">Geles</a></li>
+                                    <li><a class="dropdown-item" href="repelentes.html">Repelentes</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div id="products-carousel" class="carousel slide carousel-fade my-4" data-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="slide 1"></button>
+                <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="1" aria-label="slide 2"></button>
+                <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="2" aria-label="slide 3"></button>
+                <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="3" aria-label="slide 4"></button>
+                <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="4" aria-label="slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imgs/suplementos.jpg" class="d-block w-100 imgs-size" alt="suplementos">
+                    <div class="carousel-caption">
+                        <h1>Suplementos</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos odit similique 
+                        consequuntur 
+                        assumenda at. Tempore inventore, magnam beatae accusantium libero numquam dolorem odit qui ipsum 
+                        deleniti nobis id. Repellendus, maxime.</p>
+                        <a href="suplementos.html" class="btn btn-md btn-light">Ir a listado</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/tinturas.jpg" class="d-block w-100 imgs-size" alt="tinturas">
+                    <div class="carousel-caption">
+                        <h1>Tinturas</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos odit similique 
+                        consequuntur 
+                        assumenda at. Tempore inventore, magnam beatae accusantium libero numquam dolorem odit qui ipsum 
+                        deleniti nobis id. Repellendus, maxime.</p>
+                        <a href="tinturas.html" class="btn btn-md btn-light">Ir a listado</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/crema.jpg" class="d-block w-100 imgs-size" alt="Cremas">
+                    <div class="carousel-caption">
+                        <h1>Cremas</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos odit similique 
+                        consequuntur 
+                        assumenda at. Tempore inventore, magnam beatae accusantium libero numquam dolorem odit qui ipsum 
+                        deleniti nobis id. Repellendus, maxime.</p>
+                        <a href="cremas.html" class="btn btn-md btn-light">Ir a listado</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/gel.jpg" class="d-block w-100 imgs-size" alt="geles">
+                    <div class="carousel-caption">
+                        <h1>Geles</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos odit similique 
+                        consequuntur 
+                        assumenda at. Tempore inventore, magnam beatae accusantium libero numquam dolorem odit qui ipsum 
+                        deleniti nobis id. Repellendus, maxime.</p>
+                        <a href="geles.html" class="btn btn-md btn-light">Ir a listado</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/repelent.jpg" class="d-block w-100 imgs-size" alt="repelentes">
+                    <div class="carousel-caption">
+                        <h1>Repelentes</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos odit similique 
+                        consequuntur 
+                        assumenda at. Tempore inventore, magnam beatae accusantium libero numquam dolorem odit qui ipsum 
+                        deleniti nobis id. Repellendus, maxime.</p>
+                        <a href="repelentes.html" class="btn btn-md btn-light">Ir a listado</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#products-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#products-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <!--footer-->
+        <footer class="footer bg-dark py-5">
+            <div class="container grid grid-3">
+                <div>
+                    <h1>Buena Tierra</h1>
+                    <p>copyright &copy; 2021</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Volver</a>
+                        </li>
+                        <li>
+                            <a href="about.html">Sobre Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="products.html">Productos</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="https://www.instagram.com/buenatierra.suplementos/"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.facebook.com/pages/category/Community/Buena-Tierra-731978886876455/"><i class="fab fa-facebook-messenger fa-2x"></i></a>
+                    <a href="https://www.facebook.com/pages/category/Community/Buena-Tierra-731978886876455/"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+            </div>
+        </footer>
+        <!-- Development version -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<!-- Production version -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    </body>
+</html>
