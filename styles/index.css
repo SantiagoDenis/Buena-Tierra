@@ -473,6 +473,21 @@ img {
   line-height: 1.6;
   background-color: #198754; }
 
+.navbar {
+  font-size: 1rem; }
+
+#nav-products {
+  background-color: #01403A !important; }
+  #nav-products #navbar-brand {
+    color: #fff; }
+  #nav-products .navbar-nav .nav-link {
+    padding: 10px;
+    margin: 0 5px;
+    color: #fff; }
+  #nav-products .navbar-nav .nav-link:hover,
+  #nav-products .navbar-nav .nav-link.active {
+    border-bottom: 2px #fff solid; }
+
 .carousel-item {
   height: 35rem;
   background-color: black;

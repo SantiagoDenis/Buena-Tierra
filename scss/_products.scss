@@ -7,6 +7,30 @@
     background-color:#198754;
 }
 
+
+.navbar {
+    font-size: 1rem;
+}
+
+#nav-products {
+    background-color: #01403A!important;
+
+    #navbar-brand {
+        color: #fff;
+    }
+    .navbar-nav {
+        .nav-link {
+            padding: 10px;
+            margin: 0 5px;
+            color: #fff;
+        }
+        .nav-link:hover,
+        .nav-link.active {
+            border-bottom: 2px #fff solid;
+        }
+    }
+}
+
 .carousel-item{
     height: 35rem;
     background-color: black;
