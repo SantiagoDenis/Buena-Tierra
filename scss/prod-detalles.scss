@@ -1,0 +1,24 @@
+.single-product {
+    h6 {
+        color: #01290f;
+    }
+
+    select {
+        display: block;
+        padding: 5px 10px;
+        margin: 0;
+    }
+
+    input {
+        width: 3rem;
+        height: 2.5rem;
+        padding-left: 0.6rem;
+        font-size: 1rem;
+        margin-right: 0.6rem;
+    }
+
+    .buy-btn {
+        background-color: var(--dark-color);
+        box-shadow: black 3px;
+    }
+}

@@ -10,7 +10,8 @@ body {
   font-family: "lato", sans-serif;
   color: #BFB26F;
   line-height: 1.6;
-  background-color: #014419; }
+  background-color: #014419;
+  overflow-x: hidden; }
 
 ul {
   list-style-type: none; }
@@ -76,7 +77,7 @@ img {
   background-color: var(--secondary-color);
   color: #fff; }
 
-.bg-dark, .btn-dark {
+.bg-dark, .bkgr-dark, .btn-dark {
   background-color: var(--dark-color);
   color: #fff; }
 
@@ -86,7 +87,7 @@ img {
 
 .bg-primary a, .btn-primary a,
 .bg-secondary a, .btn-secondary a,
-.bg-dark a, .btn-dark a {
+.bg-dark a, .bkgr-dark a, .btn-dark a {
   color: #fff; }
 
 /*text sizes*/
@@ -143,9 +144,6 @@ img {
 
 .my-4 {
   margin: 4rem; }
-
-.my-5 {
-  margin: 5rem; }
 
 /*padding*/
 .py-1 {
@@ -259,6 +257,9 @@ img {
   margin: 0 10px; }
 
 /*For each file*/
+.nav .container {
+  overflow: hidden; }
+
 /*showcase*/
 .showcase {
   height: 400px;
@@ -353,22 +354,6 @@ img {
 .social-networks .card:hover {
   transform: translateY(-15px); }
 
-/*each y map */
-.bg-#750433 {
-  background-color: #750433; }
-
-.bg-#750433 {
-  background-color: #750433; }
-
-.bg-#01403A {
-  background-color: #01403A; }
-
-.bg-#002240 {
-  background-color: #002240; }
-
-.bg-#002240 {
-  background-color: #002240; }
-
 /*Tablets and under*/
 @media (max-width: 768px) {
   .grid, .grid-3, .grid-5, .showcase .grid, .showcase .grid-3, .showcase .grid-5, .info .grid, .info .grid-3, .info .grid-5, .cli .grid, .cli .grid-3, .cli .grid-5, .contact .grid, .contact .grid-3, .contact .grid-5, .about-main {
@@ -416,14 +401,26 @@ img {
   width: 300px;
   justify-self: flex-end; }
 
-.about-head-text {
-  animation: slideInFromLeft 1s ease-in; }
+.waves {
+  position: absolute;
+  top: 25rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0; }
+  .waves svg {
+    position: relative;
+    display: block;
+    width: calc(158% + 1.3px);
+    height: 115px; }
+  .waves .shape-fill {
+    fill: #01403A; }
 
 .img-container {
-  animation: slideInFromRight 1s ease-in;
   justify-self: center; }
 
 .about-sub-head {
+  margin-top: 5rem;
   justify-self: flex-end;
   background-color: #014419;
   color: #BFB26F; }
@@ -454,7 +451,9 @@ img {
   .about-sub-head, .about-head {
     text-align: center; }
   .about-sub-head, .about-head img {
-    justify-self: center; } }
+    justify-self: center; }
+  .waves {
+    top: 37rem; } }
 
 /*mobile*/
 @media (max-width: 480px) {
@@ -464,20 +463,19 @@ img {
     flex-direction: column; }
   .nav ul {
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.1); } }
+    background-color: rgba(0, 0, 0, 0.1); }
+  .waves {
+    top: 48rem; } }
 
 /*Productos*/
-#body-products {
-  font-family: "lato", sans-serif;
-  color: #BFB26F;
-  line-height: 1.6;
-  background-color: #198754; }
-
 .navbar {
-  font-size: 1rem; }
+  font-size: 1rem;
+  position: sticky; }
 
 #nav-products {
   background-color: #01403A !important; }
+  #nav-products #navbar-supported-content {
+    justify-content: flex-end; }
   #nav-products #navbar-brand {
     color: #fff; }
   #nav-products .navbar-nav .nav-link {
@@ -488,27 +486,109 @@ img {
   #nav-products .navbar-nav .nav-link.active {
     border-bottom: 2px #fff solid; }
 
+#products-carousel-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden; }
+
 .carousel-item {
   height: 35rem;
   background-color: black;
   color: white;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .carrusel {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  width: 50%; }
 
 .imgs-size {
   background-size: cover;
-  height: 35rem;
+  height: 40rem;
   opacity: 0.7; }
+
+hr {
+  width: 4rem;
+  height: 2px;
+  background-color: #fb774b; }
+
+.star {
+  padding: 0.6rem 0; }
+  .star i {
+    font-size: 0.8rem;
+    color: goldenrod; }
 
 .kinds {
   padding: 16rem 0;
   animation: slideInFromBottom 1s ease-in; }
+
+.buy-btn {
+  cursor: pointer;
+  margin: auto;
+  padding: 0.7rem;
+  border: none;
+  background-color: black;
+  color: white; }
+  .buy-btn :hover {
+    opacity: 0.7; }
+
+.product {
+  margin-bottom: 2rem; }
+  .product img {
+    cursor: pointer;
+    transition: 0.3s all;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    object-fit: cover; }
+  .product img:hover {
+    opacity: 0.5; }
+  .product .buy-btn {
+    background-color: orangered;
+    transform: translateY(1.2rem);
+    opacity: 0;
+    transition: 0.3s all; }
+
+.product:hover .buy-btn {
+  transform: translateY(0);
+  opacity: 1; }
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+  .pagination-container .pagination a {
+    color: black; }
+
+body > div > nav > ul > li.page-item.active > a {
+  background-color: var(--primary-color) !important; }
+
+#banner {
+  background-image: url(/imgs/imagenFondoRegistro.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: top 4.2rem center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #22120c; }
+  #banner button {
+    background-color: #22120c; }
+
+bkgr-dark {
+  background-color: var(--dark-color) !important; }
 
 /*register*/
 .banner {
@@ -516,15 +596,21 @@ img {
   background-size: cover;
   background-position: center; }
 
-.registro {
-  text-align: center;
-  color: black; }
-
-#copywright {
-  font-size: x-small;
-  font-family: cursive;
-  text-align: center;
-  color: black; }
+main .registro {
+  margin: 10rem 0; }
+  main .registro h1 {
+    color: black; }
+  main .registro .card:hover {
+    opacity: 0.8;
+    cursor: pointer; }
+  main .registro .buy-btn {
+    background-color: orangered;
+    transform: translateY(1.2rem);
+    opacity: 0;
+    transition: 0.3s all; }
+  main .registro .card:hover .buy-btn {
+    transform: translateY(0);
+    opacity: 1; }
 
 #body-404 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -559,3 +645,22 @@ img {
       transition: 0.6s; }
     #body-404 .container a:hover {
       background: #b93c3c; }
+
+.single-product h6 {
+  color: #01290f; }
+
+.single-product select {
+  display: block;
+  padding: 5px 10px;
+  margin: 0; }
+
+.single-product input {
+  width: 3rem;
+  height: 2.5rem;
+  padding-left: 0.6rem;
+  font-size: 1rem;
+  margin-right: 0.6rem; }
+
+.single-product .buy-btn {
+  background-color: var(--dark-color);
+  box-shadow: black 3px; }

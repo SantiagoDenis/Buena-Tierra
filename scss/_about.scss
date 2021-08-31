@@ -8,16 +8,32 @@
     }
 }
 
-.about-head-text {
-    animation: slideInFromLeft 1s ease-in;
+.waves {
+    position: absolute;
+    top: 25rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    svg {
+        position: relative;
+        display: block;
+        width: calc(158% + 1.3px);
+        height: 115px;
+    }
+
+    .shape-fill {
+        fill: #01403A;
+    }
 }
 
 .img-container {
-    animation: slideInFromRight 1s ease-in;
     justify-self: center;
 }
 
 .about-sub-head {
+    margin-top: 5rem;
     justify-self: flex-end;
     background-color: #014419;
     color: #BFB26F;
@@ -68,6 +84,10 @@
     .about-sub-head, .about-head img{
         justify-self: center;
     }
+
+    .waves {
+        top: 37rem;
+    }
 }
 
 /*mobile*/
@@ -83,5 +103,9 @@
     .nav ul{
         padding: 10px;
         background-color: rgba(0,0,0,0.1);
+    }
+
+    .waves {
+        top: 48rem;
     }
 }

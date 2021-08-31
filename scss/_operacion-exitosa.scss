@@ -1,0 +1,38 @@
+
+/*register*/
+.banner{
+    background-image: url(/imgs/imagenFondoRegistro.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main{
+    .registro{
+        margin: 10rem 0;
+
+        h1 {
+            color: black;
+        }
+
+        .card:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .buy-btn {
+            background-color: orangered;
+            transform: translateY(1.2rem);
+            opacity: 0;
+            transition: 0.3s all;
+        }
+
+        .card:hover {
+            .buy-btn {
+                transform: translateY(0);
+                opacity: 1;
+            }
+    }
+}
+}
+
+

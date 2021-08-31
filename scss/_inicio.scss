@@ -1,4 +1,10 @@
 
+.nav {
+    .container {
+        overflow: hidden;
+    }
+}
+
 /*showcase*/
 .showcase {
     height: 400px;
@@ -123,7 +129,6 @@
     }
 }
 
-
 /*Social Networks*/
 
 .social-networks {
@@ -136,11 +141,4 @@
     .card:hover {
         transform: translateY(-15px);
     }
-}
-/*each y map */
-$networks: #750433,#750433,#01403A,#002240,#002240;
-@each $network in $networks {
-    .bg-#{$network} {
-    background-color: $network;
-}
 }

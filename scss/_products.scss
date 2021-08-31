@@ -1,19 +1,17 @@
 
 /*Productos*/
-#body-products{
-    font-family: "lato", sans-serif;
-    color: #BFB26F;
-    line-height: 1.6;
-    background-color:#198754;
-}
-
 
 .navbar {
     font-size: 1rem;
+    position: sticky;
 }
 
 #nav-products {
     background-color: #01403A!important;
+
+    #navbar-supported-content {
+        justify-content: flex-end;
+    }
 
     #navbar-brand {
         color: #fff;
@@ -31,11 +29,22 @@
     }
 }
 
+#products-carousel-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
 .carousel-item{
     height: 35rem;
     background-color: black;
     color: white;
     position: relative;
+    overflow: hidden;
 }
 
 .carrusel{
@@ -44,15 +53,112 @@
     left: 0;
     right: 0;
     padding-bottom: 3rem;
+    width: 50%;
 }
 
 .imgs-size{
     background-size: cover;
-    height: 35rem;
+    height: 40rem;
     opacity: 0.7;
+}
+
+hr {
+    width: 4rem;
+    height: 2px;
+    background-color: #fb774b;
+}
+
+.star {
+    padding: 0.6rem 0;
+
+    i {
+        font-size: 0.8rem;
+        color: goldenrod;
+    }
 }
 
 .kinds{
     padding: 16rem 0;
     animation: slideInFromBottom 1s ease-in;
+}
+
+.buy-btn {
+    cursor: pointer;
+    margin: auto;
+    padding: 0.7rem;
+    border: none;
+
+    background-color: black;
+    color: white;
+    :hover {
+        opacity: 0.7;
+    }
+}
+
+.product {
+    margin-bottom: 2rem;
+    img {
+        cursor: pointer;
+        transition: 0.3s all;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        object-fit: cover;
+    }
+    img:hover {
+        opacity: 0.5;
+    }
+    .buy-btn {
+        background-color: orangered;
+        transform: translateY(1.2rem);
+        opacity: 0;
+        transition: 0.3s all;
+    }
+}
+
+.product:hover {
+    .buy-btn {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    .pagination {
+        a{
+            color: black;
+        }
+    }
+}
+
+body > div > nav > ul > li.page-item.active > a {
+    background-color: var(--primary-color)!important;
+}
+
+#banner {
+    background-image: url(/imgs/imagenFondoRegistro.jpg);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top 4.2rem center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgb(34, 18, 12);
+    
+    button {
+        background-color: rgb(34, 18, 12);
+    }
+}
+
+bkgr-dark {
+    background-color: var(--dark-color)!important;
 }
