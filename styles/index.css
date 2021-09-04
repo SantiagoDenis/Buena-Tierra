@@ -588,6 +588,11 @@ footer .container a:hover {
   .waves {
     top: 45.6rem; } }
 
+/*mobile*/
+@media screen and (max-width: 335px) {
+  .waves {
+    top: 47.6rem; } }
+
 /*Productos*/
 .navbar {
   font-size: 1rem;
