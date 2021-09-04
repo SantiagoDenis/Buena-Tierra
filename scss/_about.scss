@@ -50,7 +50,7 @@
 
 
 /*Tablets and under*/
-@media(max-width: 768px) {
+@media screen and (max-width: 768px) {
     .grid, .showcase .grid, .info .grid, .cli .grid, .contact .grid, .about-main{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -86,15 +86,20 @@
     }
 
     .waves {
-        top: 37rem;
+        top: 41.6rem;
     }
 }
 
 /*mobile*/
-@media(max-width: 480px) {
+@media screen and (max-width: 480px) {
     .nav{
-        height: 110px;
+        height: 130px;
     }
+
+    .css-1j8o68fg {
+        width: 100%;
+    }
+
 
     .nav .flex{
         flex-direction: column;
@@ -105,7 +110,29 @@
         background-color: rgba(0,0,0,0.1);
     }
 
+    .about-head {
+        padding: 1rem;
+    }
+
     .waves {
-        top: 48rem;
+        top: 41.6rem;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 400px) {
+    .waves {
+        top: 43.7rem;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 360px) {
+    .nav{
+        height: 130px;
+    }
+
+    .waves {
+        top: 45.6rem;
     }
 }

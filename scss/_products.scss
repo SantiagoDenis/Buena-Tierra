@@ -8,14 +8,25 @@
 
 #nav-products {
     background-color: #01403A!important;
+    display: flex;
+    flex-wrap: nowrap;
+
+    .container {
+        div {
+            width: 100%;
+
+            
+                #navbar-brand {
+                    justify-content: flex-start;
+                    margin-right: 25%;
+                }
+        }
+    }
 
     #navbar-supported-content {
         justify-content: flex-end;
     }
 
-    #navbar-brand {
-        color: #fff;
-    }
     .navbar-nav {
         .nav-link {
             padding: 10px;
@@ -29,12 +40,41 @@
     }
 }
 
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+
+.loader-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #13305a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+
 #products-carousel-container {
     display: flex;
     justify-content: center;
     align-content: center;
     width: 100%;
-    height: auto;
     margin: auto;
     overflow: hidden;
 }

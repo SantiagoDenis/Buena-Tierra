@@ -136,14 +136,10 @@
 
 /*Social Networks*/
 
-.social-networks {
-    .card {
-        text-align: center;
-        margin: 30px 10px 40px;
-        transition: transform 0.2s ease-in;
-        animation: slideInFromBottom 1s ease-in;
-    }
-    .card:hover {
-        transform: translateY(-15px);
+footer {
+    .container {
+        a:hover {
+            color: blue;
+        }
     }
 }
