@@ -41,7 +41,7 @@ img {
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  overflow: auto;
+  overflow: hidden;
   padding: 0 40px; }
 
 .card {
@@ -535,6 +535,14 @@ footer .container a:hover {
 .about-main .card > i {
   margin-right: 20px; }
 
+.about-main .container {
+  overflow: hidden; }
+  .about-main .container .card:hover {
+    opacity: 0.3; }
+
+.about-sub-head .container {
+  overflow: hidden; }
+
 /*Tablets and under*/
 @media screen and (max-width: 768px) {
   .grid, .grid-3, .grid-5, .showcase .grid, .showcase .grid-3, .showcase .grid-5, .info .grid, .info .grid-3, .info .grid-5, .cli .grid, .cli .grid-3, .cli .grid-5, .contact .grid, .contact .grid-3, .contact .grid-5, .about-main {
@@ -728,7 +736,7 @@ body > div > nav > ul > li.page-item.active > a {
   background-color: var(--primary-color) !important; }
 
 #banner {
-  background-image: url(imgs/imagenFondoRegistro);
+  background-image: url(../imgs/imagenFondoRegistro.jpg);
   width: 100%;
   height: 60vh;
   background-size: cover;
@@ -748,7 +756,7 @@ bkgr-dark {
 
 /*register*/
 .banner {
-  background-image: url(imgs/imagenFondoRegistro);
+  background-image: url(../imgs/imagenFondoRegistro.jpg);
   background-size: cover;
   background-position: center; }
 

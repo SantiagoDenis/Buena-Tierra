@@ -8,6 +8,9 @@
     <meta name="keywords" content="COSMÉTICOS, NATURALEZA, CUIDADO, SALUD, SALUDABLE, PRODUCTOS, BELLEZA, BARATO">
     <meta name="robots" content="index, follow">
     
+    <!-- library for animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="styles/index.css">
     <title>Resultado</title>
 
@@ -34,6 +37,10 @@
             </nav>
         </div>
     </div>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+        </div>
 
     <main>
         <div class="container flex registro my-5 py-5">
@@ -73,7 +80,13 @@
         </div>
     </footer>
 
-            <!-- script for the loader -->
-            <script src="js/loader.js"></script>
+    <!-- script for the loader -->
+    <script src="js/loader.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
 </body>
 </html>

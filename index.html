@@ -12,6 +12,9 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- library for animation -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <link rel="stylesheet" href="styles/index.css">
     
@@ -40,6 +43,10 @@
             </div>
         </div>
     </nav>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+        </div>
 
     <!--showcase-->
     <section class="showcase">
@@ -71,17 +78,17 @@
     <section class="info">
         <div class="container"> 
             <div class="info grid-3 text-center my-4">
-                <div>
+                <div data-aos="fade-right">
                     <i class="fa fa-heart fa-3x"></i>
                     <h3>Para vos</h3>
                     <p class="text-secondary">Los mejores precios del mercado</p>
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <i class="fa fa-check-square fa-3x"></i>
                     <h3>Personal certificado</h3>
                     <p class="text-secondary">Para tu total confianza</p>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <i class="fa fa-map-marker fa-3x"></i>
                     <h3>Puntos de venta</h3>
                     <p class="text-secondary">Por todo Córdoba</p>
@@ -93,13 +100,13 @@
     <!--Cli-->
     <section class="cli">
         <div class="container grid">
-            <div>
+            <div data-aos="flip-right">
                 <img src="imgs/cli.svg" alt="healthy Fun">
             </div>
-            <div class="card">
+            <div class="card" data-aos="flip-left">
                 <h3>Te ayudamos a mejorar tu estilo de vida</h3>
             </div>
-            <div class="card">
+            <div class="card" data-aos="flip-left">
                 <h3>Inicia tu recorrido con Buena Tierra</h3>
             </div>
         </div>
@@ -108,17 +115,17 @@
     <!--contacto-->
     <section class="contact py-4">
         <div class="container grid">
-            <div class="text-center">
+            <div class="text-center" data-aos="flip-down">
                 <h2 class="md">Contáctanos</h2>
                 <p class="lead my-1">En Buena Tierra,<b>nuestra prioridad número uno sos vos</b>, el cliente. Creemos en que el feedback es uno de los pilares fundamentales sobre el cual nuestra empresa está creciendo constantemente. ¡No dudes en comunicarte!</p>
             </div>
-            <img src="imgs/contact.svg" alt="contact us">
+            <img data-aos="flip-down" src="imgs/contact.svg" alt="contact us">
         </div>
     </section>
 
     <!--footer-->
     <footer class="footer bkgr-dark py-5">
-        <div class="container grid grid-3">
+        <div class="container grid grid-3" data-aos="ease-in">
             <div>
                 <h1>Buena Tierra</h1>
                 <p>copyright &copy; 2021</p>
@@ -146,7 +153,13 @@
         </div>
     </footer>
 
-            <!-- script for the loader -->
-            <script src="js/loader.js"></script>
+    <!-- script for the loader -->
+    <script src="js/loader.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
 </body>
 </html>

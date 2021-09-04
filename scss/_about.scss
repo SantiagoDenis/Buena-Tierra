@@ -47,6 +47,20 @@
     margin-right: 20px;
 }
 
+.about-main {
+    .container {
+        overflow: hidden;
+        .card:hover {
+            opacity: 0.3;
+        }
+    }
+}
+
+.about-sub-head {
+    .container {
+        overflow: hidden;
+    }
+}
 
 
 /*Tablets and under*/
