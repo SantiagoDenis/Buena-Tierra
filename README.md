@@ -1,4 +1,4 @@
-# Buena-Tierra-clase-15
+# Buena Tierra Company
 
 ## The first version of Buena Tierra company
 
